@@ -3,9 +3,7 @@ trigger:
 
 pool:
  vmImage: 'ubuntu-latest'
+ 
 steps:
-- script: mvn validate
-  displayName: 'Maven Validate'
-
-- script: mvn compile
-  displayName: 'Maven Compile'
+  - script: mvn compile
+    displayName: 'Maven Compile'
