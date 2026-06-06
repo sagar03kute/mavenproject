@@ -1,7 +1,8 @@
 trigger:
 - master   # runs when code is pushed to main branch
 
-  
+pool:
+ vmImage: 'ubuntu-latest'
 steps:
 - script: maven validate
   displayName: 'Maven Validate'
